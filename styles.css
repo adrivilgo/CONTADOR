@@ -1,0 +1,31 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+h1{
+
+    color:green ;
+    margin: 5px;
+}
+
+#contador {
+
+    font-size: 36px;
+    margin: 5px;
+
+}
+button{ 
+    background-color: blueviolet;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+
+#numero{
+    height: 10xp;
+    padding: 0;
+}
