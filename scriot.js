@@ -1,26 +1,28 @@
-const contadorElement = document.getElementById("contador")
+const contadorElement = document.getElementById("numero")
 const aumentarButton = document.getElementById("aumentar")
-const diminuirButton = document.getElementById("disminuir")
+const disminuirButton = document.getElementById("disminuir")
 const resetearButton = document.getElementById("resetear")
-const numeroImput = document.getElementById("aumentar")
+
 
 let contador = 0;
 
 aumentarButton.addEventListener("click" ,() => {
-    contador += parseInt (numeroImput.value) || 1;
-    contadorElement.textContent = contador;
-    numeroImput.value = " ";
+     contador++;
+    contadorElement.innerHTML = contador
+    console.log(contador);
 
 });
 
-disminuirButton.addEventListener ("click", =() => {
-    contador -= parseInt(numeroImput.value) || 1;
-    contadorElement.textContent = contador;
-    numeroImput.value = " ";
+disminuirButton.addEventListener ("click", () => {
+  if (contador > 0)
+        contador--;
+        contadorElement.innerHTML = contador
+     console.log(contador);
+   
 });
 
 resetearButton.addEventListener("click", () => {
     contador = 0;
-    contadorElement.textContent = contador;
-    numeroImput.value = " ";
+    contadorElement.innerHTML = contador
+        console.log(contador);
 });
